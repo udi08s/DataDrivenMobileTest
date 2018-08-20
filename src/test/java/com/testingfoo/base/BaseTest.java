@@ -66,8 +66,8 @@ public class BaseTest {
 				
 				System.out.println("Test Started");
 
-				File appDir = new File("src");
-				File app = new File(appDir, "ApiDemos-debug.apk");
+				//File appDir = new File("src");
+				//File app = new File(appDir, "ApiDemos-debug.apk");
 
 				cap = new DesiredCapabilities();
 				cap.setCapability("deviceName", config.getProperty("deviceName"));
@@ -81,6 +81,8 @@ public class BaseTest {
 				driver = new AndroidDriver<MobileElement>(new URL("http:/127.0.0.1:4723/wd/hub"), cap);
 				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+				System.out.println("Testing GitHub");
 			}
 
 			

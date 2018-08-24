@@ -14,6 +14,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.testingfoo.libraries.CommonLib;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
@@ -65,24 +67,33 @@ public class BaseTest {
 			if (config.getProperty("platformName").equals("Android")) {
 				
 				System.out.println("Test Started");
+				
+				File file = new File(config.getProperty("user.dir") + "\\src\\test\\resources\\installable\\com.quora.android_2.7.18-1621_minAPI21.apk");
 
-				//File appDir = new File("src");
-				//File app = new File(appDir, "ApiDemos-debug.apk");
-
+				
 				cap = new DesiredCapabilities();
 				cap.setCapability("deviceName", config.getProperty("deviceName"));
 				cap.setCapability("udid", config.getProperty("udid")); // Give Device ID of your mobile phone
 				cap.setCapability("platformName", config.getProperty("platformName"));
 				cap.setCapability("platformVersion", config.getProperty("platformVersion"));
-				cap.setCapability("appPackage", config.getProperty("appPackage"));
-				cap.setCapability("appActivity", config.getProperty("appActivity"));
+				cap.setCapability("app", file.getAbsolutePath());
 				cap.setCapability("noReset", config.getProperty("noReset"));
+				
 				
 				driver = new AndroidDriver<MobileElement>(new URL("http:/127.0.0.1:4723/wd/hub"), cap);
 				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				
 				System.out.println("Testing GitHub");
+				
+				
+				try {
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
 			}
 
 			

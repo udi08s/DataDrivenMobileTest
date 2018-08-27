@@ -68,9 +68,8 @@ public class BaseTest {
 				
 				System.out.println("Test Started");
 				
-				File file = new File(config.getProperty("user.dir") + "\\src\\test\\resources\\installable\\com.quora.android_2.7.18-1621_minAPI21.apk");
+				File file = new File("C:\\Users\\useshadr\\eclipse-workspace\\DataDrivenMobileTest\\src\\test\\resources\\installable\\login_registration_example_v3.0.apk");
 
-				
 				cap = new DesiredCapabilities();
 				cap.setCapability("deviceName", config.getProperty("deviceName"));
 				cap.setCapability("udid", config.getProperty("udid")); // Give Device ID of your mobile phone
@@ -88,7 +87,7 @@ public class BaseTest {
 				
 				
 				try {
-					Thread.sleep(5);
+					Thread.sleep(5000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -100,14 +99,15 @@ public class BaseTest {
 		}
 	}
 
-	@Test
-	public void test() {
-		System.out.println("Test Pass");
-	}
+
 
 	@AfterSuite
 	public void tearDown() {
+		
+		if(driver!=null) {
+			driver.quit();
+		}
+		
 		System.out.println("Test Complete");
-		driver.quit();
 	}
 }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Project Suite]">
+  <test thread-count="5" name="RegisterTest(failed)">
     <classes>
-      <class name="com.testingfoo.base.BaseTest">
+      <class name="com.testingfoo.testcases.RegisterTestCase">
         <methods>
-          <include name="test"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.testingfoo.base.BaseTest -->
+      </class> <!-- com.testingfoo.testcases.RegisterTestCase -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- RegisterTest(failed) -->
+</suite> <!-- Failed suite [Data Driven Project Suite] -->

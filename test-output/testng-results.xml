@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Data Driven Project Suite" duration-ms="27134" started-at="2018-08-27T15:41:30Z" finished-at="2018-08-27T15:41:57Z">
+  <suite name="Data Driven Project Suite" duration-ms="26752" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
     <groups>
     </groups>
-    <test name="RegisterTest" duration-ms="27134" started-at="2018-08-27T15:41:30Z" finished-at="2018-08-27T15:41:57Z">
+    <test name="RegisterTest" duration-ms="26752" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
       <class name="com.testingfoo.testcases.RegisterTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="setUp" is-config="true" duration-ms="31001" started-at="2018-08-27T15:40:59Z" finished-at="2018-08-27T15:41:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="setUp" is-config="true" duration-ms="28314" started-at="2018-08-27T16:38:19Z" finished-at="2018-08-27T16:38:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="test" duration-ms="27010" started-at="2018-08-27T15:41:30Z" finished-at="2018-08-27T15:41:57Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="test" duration-ms="26715" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="tearDown" is-config="true" duration-ms="3961" started-at="2018-08-27T15:41:57Z" finished-at="2018-08-27T15:42:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="tearDown" is-config="true" duration-ms="3662" started-at="2018-08-27T16:39:15Z" finished-at="2018-08-27T16:39:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

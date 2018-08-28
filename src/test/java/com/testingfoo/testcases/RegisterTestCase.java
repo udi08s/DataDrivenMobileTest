@@ -34,5 +34,7 @@ public class RegisterTestCase extends BaseTest {
 		
 		driver.findElement(By.id(OR.getProperty("CreateBtn"))).click();
 		
+		System.out.println("Testcase Completed");
+		
 	}
 }

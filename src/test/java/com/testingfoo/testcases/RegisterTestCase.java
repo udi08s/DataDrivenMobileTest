@@ -3,11 +3,17 @@ package com.testingfoo.testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.testingfoo.base.BaseTest;
+import com.testingfoo.rough.ReadingToastMessage;
+
+import net.sourceforge.tess4j.TesseractException;
 
 public class RegisterTestCase extends BaseTest {
+
+	private String expectedResult;
 
 	@Test
 	public void test() {
@@ -33,6 +39,15 @@ public class RegisterTestCase extends BaseTest {
 		driver.findElement(By.id(OR.getProperty("RegistrationPageConfirmPasswordTextField"))).sendKeys("pass1234");
 		
 		driver.findElement(By.id(OR.getProperty("CreateBtn"))).click();
+		
+		
+		try {
+			expectedResult=ReadingToastMessage.readToastMessage(driver);
+		} catch (TesseractException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+		Assert.assertEquals(expectedResult.contains("Account Successfully Created"), true);
 		
 		System.out.println("Testcase Completed");
 		

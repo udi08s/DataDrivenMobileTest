@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Data Driven Project Suite">
+  
+  <!--
   <test name="RegisterTest">
     <classes>
       <class name="com.testingfoo.testcases.RegisterTestCase"/>
-      <!-- <class name="com.testingfoo.base.BaseTest"/> -->
+    </classes>
+  </test> -->
+  
+  <test name="LoginTest">
+    <classes>
+      <class name="com.testingfoo.testcases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

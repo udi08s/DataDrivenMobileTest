@@ -9,6 +9,10 @@ import org.testng.annotations.Test;
 import com.testingfoo.base.BaseTest;
 import com.testingfoo.rough.ReadingToastMessage;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import net.sourceforge.tess4j.TesseractException;
 
 public class RegisterTestCase extends BaseTest {
@@ -48,6 +52,10 @@ public class RegisterTestCase extends BaseTest {
 			e.printStackTrace();
 		}		
 		Assert.assertEquals(expectedResult.contains("Account Successfully Created"), true);
+		
+
+		((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent(AndroidKey.HOME));
+
 		
 		System.out.println("Testcase Completed");
 		

@@ -46,11 +46,21 @@ public class LoginTest extends BaseTest {
 			e.printStackTrace();
 		}
 		
+		try {
+		
 		String expectedResult = driver.findElement(By.id(OR.getProperty("SuccessPageText"))).getText();
 		
 		Assert.assertEquals(expectedResult.contains("You have sucessfully logged in :)"), true);
 		
         driver.pressKey(new KeyEvent(AndroidKey.BACK)); 
+        
+		}
+		
+		catch(Exception e) {
+			
+			e.printStackTrace();
+			
+		}
 
       //System.out.println("Testcase Completed");
       

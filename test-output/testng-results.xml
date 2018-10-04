@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Data Driven Project Suite" duration-ms="26752" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
+  <suite name="Data Driven Project Suite" duration-ms="108141" started-at="2018-10-04T10:31:37Z" finished-at="2018-10-04T10:33:25Z">
     <groups>
     </groups>
-    <test name="RegisterTest" duration-ms="26752" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
-      <class name="com.testingfoo.testcases.RegisterTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="setUp" is-config="true" duration-ms="28314" started-at="2018-08-27T16:38:19Z" finished-at="2018-08-27T16:38:48Z">
+    <test name="LoginTest" duration-ms="108141" started-at="2018-10-04T10:31:37Z" finished-at="2018-10-04T10:33:25Z">
+      <class name="com.testingfoo.testcases.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testingfoo.testcases.LoginTest@43a0cee9]" name="setUp" is-config="true" duration-ms="35544" started-at="2018-10-04T10:31:01Z" finished-at="2018-10-04T10:31:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="test" duration-ms="26715" started-at="2018-08-27T16:38:48Z" finished-at="2018-08-27T16:39:15Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.testingfoo.testcases.LoginTest@43a0cee9]" name="loginTest" duration-ms="28362" started-at="2018-10-04T10:31:37Z" data-provider="getData" finished-at="2018-10-04T10:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[uday.ss@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testingfoo.testcases.RegisterTestCase@33723e30]" name="tearDown" is-config="true" duration-ms="3662" started-at="2018-08-27T16:39:15Z" finished-at="2018-08-27T16:39:18Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.testingfoo.testcases.LoginTest@43a0cee9]" name="loginTest" duration-ms="39974" started-at="2018-10-04T10:32:05Z" data-provider="getData" finished-at="2018-10-04T10:32:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[uday.ss@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.testingfoo.testcases.LoginTest@43a0cee9]" name="loginTest" duration-ms="39761" started-at="2018-10-04T10:32:45Z" data-provider="getData" finished-at="2018-10-04T10:33:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[uday.s22s@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testingfoo.testcases.LoginTest@43a0cee9]" name="tearDown" is-config="true" duration-ms="4373" started-at="2018-10-04T10:33:25Z" finished-at="2018-10-04T10:33:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testingfoo.testcases.RegisterTestCase -->
-    </test> <!-- RegisterTest -->
+      </class> <!-- com.testingfoo.testcases.LoginTest -->
+    </test> <!-- LoginTest -->
   </suite> <!-- Data Driven Project Suite -->
 </testng-results>
